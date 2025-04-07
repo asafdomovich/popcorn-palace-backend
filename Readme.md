@@ -67,6 +67,12 @@ For your convenience, compose.yml includes Postgresql DB, the app is already poi
 
 ## API Endpoints
 
+
+###  Users API
+- `GET /user/all`
+- `GET /user/{id}`
+- `POST /user`
+
 ###  Movies API
 - `GET /movies/all`
 - `POST /movies`
