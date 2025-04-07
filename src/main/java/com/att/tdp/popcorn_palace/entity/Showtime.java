@@ -1,4 +1,4 @@
-package com.att.tdp.popcorn_palace.entities;
+package com.att.tdp.popcorn_palace.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

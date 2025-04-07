@@ -1,4 +1,4 @@
-package com.att.tdp.popcorn_palace.entities;
+package com.att.tdp.popcorn_palace.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -16,6 +16,7 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true)
     private String title;
 
     private String genre;
