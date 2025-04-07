@@ -35,9 +35,8 @@ public class MovieController {
 
     // Update a movie
     @PostMapping("/update/{movieTitle}")
-    public ResponseEntity<Void> updateMovie(@PathVariable String movieTitle, @Valid @RequestBody CreateMovieRequest updateMovieRequest) {
-        movieService.updateMovie(movieTitle, updateMovieRequest);
-        return new ResponseEntity<>(HttpStatus.OK);
+    public ResponseEntity<MovieResponse> updateMovie(@PathVariable String movieTitle, @Valid @RequestBody CreateMovieRequest updateMovieRequest) {
+        return new ResponseEntity<>(movieService.updateMovie(movieTitle, updateMovieRequest), HttpStatus.OK);
     }
 
     // Delete a movie

@@ -3,6 +3,7 @@ package com.att.tdp.popcorn_palace.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 
 @Entity
@@ -22,9 +23,9 @@ public class Showtime {
 
     private double price;
 
-    private ZonedDateTime startTime;
+    private LocalDateTime startTime;
 
-    private ZonedDateTime endTime;
+    private LocalDateTime endTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "movie_id")

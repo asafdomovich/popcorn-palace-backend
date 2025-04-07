@@ -3,7 +3,8 @@ package com.att.tdp.popcorn_palace.dto.request;
 import lombok.*;
 
 import jakarta.validation.constraints.NotNull;
-import java.time.ZonedDateTime;
+
+import java.time.LocalDateTime;
 
 @Data
 public class CreateShowtimeRequest {
@@ -16,10 +17,10 @@ public class CreateShowtimeRequest {
 
     @NotNull
     private double price;
-
+    
     @NotNull
-    private ZonedDateTime startTime;
-
+    private LocalDateTime startTime;
+    
     @NotNull
-    private ZonedDateTime endTime;
+    private LocalDateTime endTime;
 }

@@ -2,9 +2,12 @@ package com.att.tdp.popcorn_palace.dto.response;
 
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ShowtimeResponse {
 
     private Long id;
@@ -13,9 +16,9 @@ public class ShowtimeResponse {
 
     private double price;
 
-    private ZonedDateTime startTime;
+    private LocalDateTime startTime;
 
-    private ZonedDateTime endTime;
+    private LocalDateTime endTime;
 
     private Long movieId;
 }

@@ -42,14 +42,16 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public void updateMovie(String movieTitle, CreateMovieRequest updateMovieRequest) {
+    public MovieResponse updateMovie(String movieTitle, CreateMovieRequest updateMovieRequest) {
         Movie movie = movieRepository.findByTitle(movieTitle).orElseThrow();
         movie.setTitle(updateMovieRequest.getTitle());
         movie.setGenre(updateMovieRequest.getGenre());
         movie.setDuration(updateMovieRequest.getDuration());
         movie.setRating(updateMovieRequest.getRating());
         movie.setReleaseYear(updateMovieRequest.getReleaseYear());
-        movieRepository.save(movie);
+        Movie updatedMovie = movieRepository.save(movie);
+        return new MovieResponse(updatedMovie.getId(), updatedMovie.getTitle(), updatedMovie.getGenre(),
+                updatedMovie.getDuration(), updatedMovie.getRating(), updatedMovie.getReleaseYear());
     }
 
     @Override

@@ -9,8 +9,8 @@ public interface MovieService {
     List<MovieResponse> getAllMovies();
 
     MovieResponse addMovie(CreateMovieRequest createMovieRequest);
-
-    void updateMovie(String movieTitle, CreateMovieRequest updateMovieRequest);
+    
+    MovieResponse updateMovie(String movieTitle, CreateMovieRequest updateMovieRequest);
 
     void deleteMovie(String movieTitle);
 }
