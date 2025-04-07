@@ -5,11 +5,10 @@ spring:
   application:
     name: popcorn-palace
   datasource:
-    url: jdbc:postgresql://localhost:5435/dave
+    url: jdbc:postgresql://localhost:5435/popcorn
     username: postgres
     password: postgres
     driverClassName: org.postgresql.Driver
-    platform: postgres
   jpa:
     database: POSTGRESQL
     show-sql: true
