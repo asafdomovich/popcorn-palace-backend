@@ -4,6 +4,7 @@ import com.att.tdp.popcorn_palace.dto.request.CreateMovieRequest;
 import com.att.tdp.popcorn_palace.dto.response.MovieResponse;
 import com.att.tdp.popcorn_palace.entity.Movie;
 import com.att.tdp.popcorn_palace.repository.MovieRepository;
+import com.att.tdp.popcorn_palace.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
