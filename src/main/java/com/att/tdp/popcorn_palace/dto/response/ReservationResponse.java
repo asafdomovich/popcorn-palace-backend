@@ -2,14 +2,12 @@ package com.att.tdp.popcorn_palace.dto.response;
 
 import lombok.*;
 
+import java.util.UUID;
+
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ReservationResponse {
 
-    private Long reservationId;
-
-    private int seatNumber;
-
-    private Long userId;
-
-    private Long showtimeId;
+    private UUID bookingId;
 }

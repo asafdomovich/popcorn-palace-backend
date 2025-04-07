@@ -4,6 +4,8 @@ import lombok.*;
 
 import jakarta.validation.constraints.NotNull;
 
+import java.util.UUID;
+
 @Data
 public class CreateReservationRequest {
 
@@ -11,7 +13,7 @@ public class CreateReservationRequest {
     private int seatNumber;
 
     @NotNull
-    private Long userId;
+    private UUID userId;
 
     @NotNull
     private Long showtimeId;

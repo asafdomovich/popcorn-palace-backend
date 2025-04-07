@@ -3,6 +3,8 @@ package com.att.tdp.popcorn_palace.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.UUID;
+
 @Entity
 @Getter
 @Setter
@@ -13,10 +15,10 @@ import lombok.*;
         @UniqueConstraint(columnNames = {"showtime_id", "seatNumber"})
 })
 public class Reservation {
-
+    
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long reservationId;
+    @GeneratedValue
+    private UUID bookingId;
 
     private int seatNumber;
 
