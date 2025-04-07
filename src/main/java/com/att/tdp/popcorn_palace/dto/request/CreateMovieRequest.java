@@ -5,6 +5,8 @@ import lombok.*;
 import jakarta.validation.constraints.NotNull;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CreateMovieRequest {
 
     @NotNull

@@ -1,6 +1,7 @@
-package com.att.tdp.popcorn_palace.dto.response;
+package com.att.tdp.popcorn_palace.controller;
 
 import com.att.tdp.popcorn_palace.dto.request.CreateReservationRequest;
+import com.att.tdp.popcorn_palace.dto.response.ReservationResponse;
 import com.att.tdp.popcorn_palace.service.ReservationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
