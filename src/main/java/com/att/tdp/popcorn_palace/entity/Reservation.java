@@ -10,7 +10,6 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Table(name = "reservations", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"showtime_id", "seatNumber"})
 })

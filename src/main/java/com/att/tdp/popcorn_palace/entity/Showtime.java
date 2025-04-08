@@ -11,7 +11,6 @@ import java.time.ZonedDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Table(name = "showtimes")
 public class Showtime {
 
