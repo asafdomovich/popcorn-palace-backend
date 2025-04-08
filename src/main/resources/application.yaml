@@ -5,9 +5,9 @@ spring:
   application:
     name: popcorn-palace
   datasource:
-    url: jdbc:postgresql://localhost:5435/popcorn
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://localhost:5433/popcorn-palace
+    username: popcorn-palace
+    password: popcorn-palace
     driverClassName: org.postgresql.Driver
   jpa:
     database: POSTGRESQL

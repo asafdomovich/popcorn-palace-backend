@@ -30,7 +30,7 @@ This will spin up a PostgreSQL container with the following configuration (as de
 
 ```
 host: localhost
-port: 5432
+port: 5433
 database: popcorn-palace
 db user: popcorn-palace
 db password: popcorn-palace
@@ -41,7 +41,7 @@ Make sure your `application.yml` file reflects the same credentials:
 ```yaml
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/popcorn-palace
+    url: jdbc:postgresql://localhost:5433/popcorn-palace
     username: popcorn-palace
     password: popcorn-palace
 ```
