@@ -1,5 +1,5 @@
 services:
-  container_name: postgres
+    container_name: postgres
     image: postgres
     restart: always
     environment:
@@ -8,3 +8,6 @@ services:
       - POSTGRES_DB=popcorn-palace
     ports:
       - 5432:5432
+
+
+
