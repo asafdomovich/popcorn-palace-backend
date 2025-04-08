@@ -69,11 +69,29 @@ spring:
 This prevents unwanted schema updates in subsequent runs.
 
 ---
+## Test the Application
+
+
+```bash
+./mvnw clean test   #for linux
+.\mvnw clean test   #for window
+```
+
+Or, if Maven is installed globally:
+
+```bash
+mvn clean test
+```
+
+---
+
+---
 
 ## Build the Application
 
 ```bash
-./mvnw clean install
+./mvnw clean install   #for linux
+.\mvnw clean install   #for windows
 ```
 
 Or, if Maven is installed globally:
